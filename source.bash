@@ -58,4 +58,6 @@ retrier ()
     
     :;
 
-) ;
+) &&
+
+exec retrier "$@"
