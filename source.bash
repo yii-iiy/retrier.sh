@@ -2,13 +2,13 @@
 
 : need bash, or may 'sh: export: illegal option -f'.
 
-retryer ()
+retrier ()
 (
-    : retryer cmd args ...
-    : ENV="some defines or codes generate ..." retryer cmd args ...
-    : ENV="make codes in func WORK; all defiles WORK has depends on" retryer WORK
+    : retrier cmd args ...
+    : ENV="some defines or codes generate ..." retrier cmd args ...
+    : ENV="make codes in func WORK; all defiles WORK has depends on" retrier WORK
     
-    : ENV='WORK () { sleep 3 ; cd $RETRIED ; }' retryer WORK
+    : ENV='WORK () { sleep 3 ; cd $RETRIED ; }' retrier WORK
     
     Generators ()
     (
