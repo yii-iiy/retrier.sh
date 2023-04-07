@@ -56,6 +56,6 @@ retrier ()
     
     :;
 
-) ;
+) &&
 
 exec retrier "$@"
