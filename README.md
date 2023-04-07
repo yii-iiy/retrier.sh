@@ -1,21 +1,23 @@
 ## retrier.sh
 
+~~~~
 🦔 tool for retry works on shell.
+~~~~
 
-#### install
+### install
 
 Two way:
 
 - copy the context of one `source` file, and write them into `~/bin/retrier` .
 - or change the last line `exec retrier "$@"` to `:;`, then write the context into `/etc/profile.d/retrier.sh`, then run `exec $SHELL`.
 
-#### demo
+### demo
 
 ~~~ sh
 ENV='WORKS () { sleep 3 ; cd $RETRIED ; }' retrier WORKS
 ~~~
 
-#### desc (zh)
+### desc (zh)
 
 它能对指定的命令自动失败时重试。
 
